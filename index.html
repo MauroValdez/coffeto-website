@@ -1,17 +1,86 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./src/img/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Responsive Coffee Website Design Using HTML CSS & JavaScript Contains animations when scrolling - Smooth scrolling in each section and more">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Coffee, Website, Design">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#65463e">
-    <title>Coffee Website</title>
-  </head>
-  <body>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./src/img/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Responsive Coffee Website Design Using HTML CSS & JavaScript Contains animations when scrolling - Smooth scrolling in each section and more">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Coffee, Website, Design">
+  <meta name="robots" content="index, follow">
+  <title>Coffee Website</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__border"></div>
+
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./src/img/logo.png" alt="logo" />
+          <span>Coffetto</span>
+        </a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#home" class="nav__link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill:currentColor;">
+                  <path
+                    d="M5 22h14a2 2 0 0 0 2-2v-9a1 1 0 0 0-.29-.71l-8-8a1 1 0 0 0-1.41 0l-8 8A1 1 0 0 0 3 11v9a2 2 0 0 0 2 2zm5-2v-5h4v5zm-5-8.59 7-7 7 7V20h-3v-5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v5H5z">
+                  </path>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="nav__link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill:currentColor;">
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                  </path>
+                  <path d="m8 16 5.991-2L16 8l-6 2z"></path>
+                </svg>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#stips" class="nav__link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill:currentColor;">
+                  <path
+                    d="M12 22c3.859 0 7-3.141 7-7s-3.141-7-7-7c-3.86 0-7 3.141-7 7s3.14 7 7 7zm0-12c2.757 0 5 2.243 5 5s-2.243 5-5 5-5-2.243-5-5 2.243-5 5-5zm-1-8H7v5.518a8.957 8.957 0 0 1 4-1.459V2zm6 0h-4v4.059a8.957 8.957 0 0 1 4 1.459V2z">
+                  </path>
+                  <path
+                    d="m10.019 15.811-.468 2.726L12 17.25l2.449 1.287-.468-2.726 1.982-1.932-2.738-.398L12 11l-1.225 2.481-2.738.398z">
+                  </path>
+                </svg>
+                <span>Stips</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#testimonial" class="nav__link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill:currentColor;">
+                  <path
+                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                  </path>
+                  <path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path>
+                </svg>
+                <span>Testimonial</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  </header>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
