@@ -1,7 +1,7 @@
 :root {
   --header-height: 9rem;
   --border-section: 56px 56px 0 0;
-  /*========== Colors ==========*/
+
   --first-color: #4a2d26;
   --first-color-alt: #2b1712;
   --first-color-light: #65463e;
@@ -10,7 +10,7 @@
   --text-color: #5b4c48;
   --text-color-light: #847571;
   --white-color: rgb(255, 255, 255);
-  /*========== Font and typography ==========*/
+
   --body-font: "Poppins", sans-serif;
   --second-font: "Pacifico", cursive;
   --biggest-font-size: 3.5rem;
@@ -21,16 +21,15 @@
   --normal-font-size: 1.5rem;
   --small-font-size: 1.4rem;
   --smaller-font-size: 1.3rem;
-  /*========== Font weight ==========*/
+
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
-  /*========== z index ==========*/
+
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 5rem;
@@ -124,7 +123,29 @@ button {
   margin: 0 auto;
 }
 
-/** header **/
+.button {
+  display: inline-flex;
+  background-color: var(--second-color);
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+  box-shadow: 0 8px 32px hsla(39, 62%, 65%, .5);
+  transition: box-shadow .3s;
+}
+.button svg {
+  width: 25px;
+  transition: transform .3s;
+}
+
+.button:hover {
+  box-shadow: 0 4px 48px hsla(39, 62%, 65%,.5);
+}
+.button:hover svg {
+  transform: translateX(.5rem);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -178,7 +199,7 @@ button {
 .nav__list {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 .5rem 0;
   padding: 0 2rem;
 }
 .nav__link {
@@ -200,12 +221,53 @@ button {
 }
 
 
+.home {
+  background: linear-gradient(
+    188deg,
+    var(--first-color) 0%,
+    var(--first-color-alt) 100%
+  );
+}
 
-
-
-
-
-
+.home__container {
+  padding-top: 5rem;
+  row-gap: 3rem;
+}
+.home__data {
+  text-align: center;
+}
+.home__subtitle {
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  font-weight: var(--font-medium);
+  margin-bottom: .5rem;
+}
+.home__title, .home__description {
+  color: var(--white-color);
+}
+.home__title {
+  text-align: initial;
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  font-weight: var(--font-regular);
+  line-height: 120%;
+  margin: 0 auto 2rem;
+  position: relative;
+  width: max-content;
+} 
+.home__title img {
+  position: absolute;
+  width: 80px;
+  right: -2.7rem;
+  bottom: -2.5rem;
+}
+.home__description {
+  margin-bottom: 3rem;
+}
+.home__img {
+  width: 320px;
+  justify-self: center;
+}
 
 
 
