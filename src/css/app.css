@@ -410,7 +410,7 @@ button {
   height: 5rem;
   background-color: var(--second-color);
   position: absolute;
-  top: -.75rem;
+  top: -0.75rem;
   left: 0;
   display: flex;
   align-items: center;
@@ -419,9 +419,9 @@ button {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--first-color);
-  outline: .5rem solid var(--first-color);
+  outline: 0.5rem solid var(--first-color);
 }
-.steps__card-move{
+.steps__card-move {
   margin-left: 13.5rem;
 }
 .steps__description-right {
@@ -444,8 +444,6 @@ button {
   object-position: -13rem;
 }
 
-
-
 .testimonial {
   background-color: var(--first-color);
 }
@@ -466,4 +464,108 @@ button {
   width: 32rem;
   justify-content: center;
   border-radius: 2rem;
+}
+
+.footer {
+  background-color: var(--white-color);
+  position: relative;
+}
+.footer__bg {
+  background-color: var(--first-color-alt);
+  border-radius: var(--border-section);
+}
+.footer__container {
+  padding-block: 4rem 7rem;
+  row-gap: 4.5rem;
+  position: relative;
+}
+.footer__data {
+  text-align: center;
+  row-gap: 4.5rem;
+}
+.footer__logo,
+.footer__title,
+.footer__email,
+.footer__description,
+.footer__social-link {
+  color: var(--white-color);
+}
+.footer__logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--h3-font-size);
+  font-family: var(--second-font);
+  margin-bottom: 2rem;
+}
+.footer__logo img {
+  width: 3rem;
+}
+.footer__title {
+  font-size: var(--big-font-size);
+  font-family: var(--second-font);
+  font-weight: var(--font-regular);
+  line-height: 120%;
+}
+.footer__form {
+  row-gap: 1rem;
+}
+.footer__email {
+  border: none;
+  outline: none;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  width: 100%;
+  background: transparent;
+  border: 2px solid var(--text-color-light);
+  border-radius: 4rem;
+  padding: 1rem 1.5rem;
+}
+.footer__email::placeholder {
+  color: var(--text-color-light);
+}
+.footer__button {
+  padding-block: 1.2rem;
+  justify-content: center;
+  color: var(--first-color);
+}
+.footer__description {
+  font-size: var(--small-font-size);
+}
+.footer__privacy {
+  color: var(--second-color);
+}
+.footer__privacy:hover {
+  text-decoration: underline;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer__social-link svg {
+  width: 3rem;
+}
+.footer__social-link:hover {
+  color: var(--second-color);
+  scale: 1.2;
+  transition: .4s ease-out;
+}
+.footer__copy {
+  color: var(--white-color);
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  margin-top: 3rem;
+}
+.footer__bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: -172px;
+  opacity: .5;
 }
