@@ -551,13 +551,13 @@ button {
 .footer__social-link:hover {
   color: var(--second-color);
   scale: 1.2;
-  transition: .4s ease-out;
+  transition: 0.4s ease-out;
 }
 .footer__copy {
   color: var(--white-color);
   text-align: center;
   font-size: var(--smaller-font-size);
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 .footer__bg-img {
   position: absolute;
@@ -567,5 +567,5 @@ button {
   height: 100%;
   object-fit: cover;
   object-position: -172px;
-  opacity: .5;
+  opacity: 0.5;
 }
